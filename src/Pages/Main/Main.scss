@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+.main_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user_join_main{
+  width: 576px;
+  height: 844px;
+  border: 2px solid #E5E5E5;
+  border-radius: 15px;
+  margin-top: 35px;
+  border: 2px solid black;
+}
+
+.main_header{
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  /* border: 2px solid blue; */
+}
+
+.move_button{
+  background-color: transparent;
+  border: none;
+}
+
+.move_button:hover{
+  cursor: pointer;
+}
+
+
+.button_text{
+  color: black;
+  font-size: 24px;
+  font-weight: medium; 
+}
+
+.button_text:active{
+  color: white;
+  text-shadow: black;
+  text-decoration: dotted;
+}
+
+.main_body{
+  width: 100%;
+  height: 644px;
+  /* border: 2px solid brown; */
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.main_body_name{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.user{
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.user_information{
+  width: 100%;
+  height: 214px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 2px solid aqua */
+}
+
+.guide_text_constainer{
+  width: 100%;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.guide_text1{
+  font-size: 16px;
+  font-weight: 400px;
+  font-family:sans-serif;
+  color: black;
+  margin-bottom: 70px;
+}
+.guide_text2{
+  font-size: 12px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  color: red;
+}
+.guide_text3{
+  font-size: 12px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  color: #999999;
+}
+
+.user_nickname_and_image{
+  width: 100%;
+  height: 86px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  /* border: 2px solid aqua */
+}
+
+.input_text_box{
+  width: 100%;
+  height: 56px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #E0E0E0;
+  padding-left: 23px;
+}
+
+.phone_number{
+  width: 100%;
+  height: 86px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  /* border: 2px solid aqua */
+}
+
+.number_container{
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input_forword_number_box{
+  width: 136px;
+  height: 100%;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #E0E0E0;
+  padding-left: 23px;
+  margin-right: 10px;
+}
+
+.input_back_number_box{
+  width: 380px;
+  height: 100%;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #E0E0E0;
+  padding-left: 23px;
+}
+
+.user_birthday{
+  width: 100%;
+  height: 86px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  /* border: 2px solid aqua; */
+  margin-bottom: 50px;
+}
+
+.input_year_box{
+  width: 136px;
+  height: 100%;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #E0E0E0;
+  padding-left: 23px;
+  margin-right: 10px;
+}
+
+.input_birth_box1{
+  width: 188px;
+  height: 100%;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #E0E0E0;
+  padding-left: 23px;
+}
+
+.input_birth_box2{
+  width: 188px;
+  height: 100%;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #E0E0E0;
+  padding-left: 23px;
+  margin-left: 10px;
+}
+
+.main_bottom{
+  width: 100%;
+  height: 56px;
+  /* border: 2px solid green; */
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.user_create_button{
+  width: 100%;
+  height: 56px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2D71F7;
+  color: white;
+  font-size: 21px;
+  font-family:sans-serif;
+  font-weight: 650;
+}
+
+.user_create_button:hover{
+  cursor: pointer;
+}
+
+.user_create_button:active{
+  border: 2px solid black;
+  background-color: white;
+  color: #2D71F7;
+}
