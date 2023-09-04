@@ -1,0 +1,76 @@
+.login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+  
+    .container{
+      width: 576px;
+      height: 100vh;
+      border-radius: 16px;
+      border: 1px;
+      background-color: white;
+    }
+  
+    .logoDiv{
+      width: 576px;
+      height: 530px;
+      text-align: center;
+    }
+    .logoDiv > div{
+      position: relative;
+      top:130px;  
+    }
+    .logo{
+      width: 118px;
+      height: 142.99658203125px;
+    }
+    .logoWecode {
+      width: 144px;
+      height: 32px;
+      position: relative;
+      top :30px;
+    }
+    
+    .splash {
+      width: 576px;
+      height: 225px;
+      text-align: center;
+    }
+    
+    .inputDiv{
+      width: 528px;
+      height: 120px;
+      display: inline-block;
+    }
+  
+    .splash > button {
+      width: 528px;
+      height: 56px;
+      border-radius: 6px;
+      border: 0px;
+      margin-top: 20px;
+      background-color: #2D71F7;
+      color: white;
+    }
+    
+    .loginMenu{
+      margin-top : 8px;
+      width: 240px;
+      height: 17px;
+      display: inline-block;
+    }
+  
+    .loginMenu > a {
+      width: 96px;
+      height: 17px;
+      display: inline-block;
+    }
+    
+    .borderR {
+      border-right: 1px solid #E0E0E0;
+    }
+  }
+  
+  
