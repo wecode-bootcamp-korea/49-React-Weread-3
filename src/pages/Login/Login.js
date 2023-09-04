@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.scss";
 import { Link, useNavigate } from 'react-router-dom'; 
 const Login = () => {
@@ -6,6 +6,16 @@ const Login = () => {
   // const GoSignUp = () => {
   //   navigate("/signUp");
   //   }
+  
+  const [id , setId] = useState('');
+  const [password , setPassword] = useState('');
+
+  const idChange = () =>{
+    setId(document.getElementById("email").value)
+  }
+  const passwordChange = () =>{
+    setPassword(document.getElementById("password").value)
+  }
   
 
   return (
@@ -21,8 +31,8 @@ const Login = () => {
         </div>
         <div className = "splash">
           <div className = "inputDiv">
-            <input type="text" placeholder="이메일"></input>
-            <input type="password" placeholder="비밀번호"></input>
+            <input type="text" placeholder="이메일" id = "email"onChange ={idChange}></input>
+            <input type="password" placeholder="비밀번호" id="password"onChange = {passwordChange}></input>
           </div>
           <button> 로그인 </button>
           <div className = "loginMenu">
