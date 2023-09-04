@@ -5,17 +5,33 @@ import "./Login.scss";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  // useNavigate
   const navigate = useNavigate();
   const navigateSignin = () => {navigate('/signin')};
   const navigateMain =() => {navigate('/')}
 
+  // Logo
   const MainLogo = process.env.PUBLIC_URL + '/images/Weread/Logo.png';
   const WordLogo = process.env.PUBLIC_URL + '/images/Weread/logo_wecode.png';
-  
-  const [userId, setUserId] = useState();
-  const [userPassword, setUserPassword] = useState();
+
+  // State
+  const [userId, setUserId] = useState('');
+  const [userPassword, setUserPassword] = useState('');
   const saveUserId = (event) => {setUserId(event.target.value)}
   const saveUserPassword = (event) => {setUserPassword(event.target.value)}
+
+  // Logic  
+  const loginBtnCheck = userId.includes('@') && userPassword.length >=5 ? false : true;
+  // console.log("첫번째 : " + loginBtnCheck);
+  
+  // color
+  const loginBtnCheckColor = loginBtnCheck===false? "rgb(45, 113, 247)" : "silver"; 
+  // console.log("두번째 : " + loginBtnCheckColor);
+  
+  // Cursor
+  const loginBtnCheckClick = loginBtnCheck===false? "pointer": "default";
+
+
 
   return (
     <div className="Login">
@@ -27,8 +43,8 @@ const Login = () => {
           </div>
           <div className="loginInf">
             <input placeholder="이메일"  type="email" className="loginInfBox id" onChange={saveUserId}></input>
-            <input placeholder="비밀번호" type="password" className="loginInfBox password"  onChange={saveUserPassword}></input>
-            <button onClick={navigateMain} className="loginInfBox loginBtn">로그인</button>
+            <input placeholder="비밀번호" type="password" className="loginInfBox password" onChange={saveUserPassword}></input>
+            <button onClick={navigateMain} className="loginInfBox loginBtn" disabled={loginBtnCheck} style={{backgroundColor:loginBtnCheckColor, cursor: loginBtnCheckClick }} >로그인</button>
           </div>
           <div className="more">
             <div className="sign" ><button onClick={navigateSignin}>회원 가입</button></div>
