@@ -12,7 +12,7 @@ const Main = () => {
 
   return (
     <div className="Main">
-      <div class="buttonBox">
+      <div className="buttonBox">
         <button onClick={navigateLogin}>로그인 하러 가기</button>
       </div>
     </div>
