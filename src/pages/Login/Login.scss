@@ -1,5 +1,17 @@
-@import "../reset.scss";
-@import "../variable.scss";
+// @import "../reset.scss";
+// @import "../variable.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 
 .login,
 .Join {
@@ -54,6 +66,9 @@ input:focus {
     font-weight: bold;
     border-radius: 6px;
     padding: 16px 0;
+}
+.input-wrapper .btn-login:disabled {
+    background-color: #ddd;
 }
 .form-bottom {
     position: relative;
